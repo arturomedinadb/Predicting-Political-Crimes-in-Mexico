@@ -6,7 +6,7 @@ This project analyzes political violence in Mexico, aiming to predict future inc
 ---
 
 ## Features of the Project
-- **Predictive Modeling**: Uses machine learning models like Random Forest and LASSO to predict political crimes.
+- **Predictive Modeling**: Uses machine learning models like K-Nearest Neighbors (KNN), Random Forest Classifier, and LASSO regression (Applied SMOTE to handle class imbalance).
 - **Data Integration**: Merges political violence, economic, and demographic datasets to provide a holistic view.
 - **Feature Engineering**: Incorporates key variables such as political party, state, and demographic factors like the number of teenagers.
 - **Visualization**: Presents insights using detailed charts and graphs to explore relationships between variables.
@@ -42,8 +42,9 @@ This project analyzes political violence in Mexico, aiming to predict future inc
    - Created new variables such as teenage population and internal migration rates.
    - Reduced dimensionality by grouping similar categories.
 4. **Modeling**:
-   - Implemented Random Forest and LASSO regression models.
-   - Assessed feature importance and predictive accuracy.
+   - Implemented KNN for classification, achieving up to 72% accuracy.
+   - Enhanced accuracy using feature selection methods like Random Forest and LASSO.
+   - Addressed imbalanced classes with SMOTE.
 5. **Evaluation**:
    - Validated models using cross-validation and performance metrics.
 
@@ -52,8 +53,8 @@ This project analyzes political violence in Mexico, aiming to predict future inc
 ## Key Results
 - **Feature Importance**: The political party, targeted role, and state were the most significant predictors of violence.
 - **Model Performance**:
-   - Random Forest outperformed other models with high accuracy and interpretability.
-   - LASSO regression highlighted the influence of economic and demographic factors.
+  - KNN achieved a final accuracy of 72%.
+  - SMOTE increased accuracy by 6% and reduced misclassification.
 - **Actionable Insights**:
    - Regions with higher youth unemployment showed increased vulnerability to political violence.
 
